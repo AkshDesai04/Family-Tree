@@ -70,3 +70,12 @@ button:active {
 button:hover {
   background-color: #ff6e54;
 }
+
+.error {
+  color: tomato;
+  display: none;
+}
+
+.error.show {
+  display: block;
+}
