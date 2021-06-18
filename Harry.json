@@ -1,0 +1,93 @@
+[
+  {
+    "RelationShip": "A",
+    "Name": "James Potter",
+    "Birth Date": "10-12-1901",
+    "Date f Death": "10-12-1991",
+    "Date Of Mairrage": "",
+    "Education": "High School",
+    "Ph No 1": 12345,
+    "Ph no 2": 46946,
+    "Ph no 3": "-",
+    "Email Address": "",
+    "Residential Address": ""
+  },
+  {
+    "RelationShip": "AW",
+    "Name": "Lily Potter",
+    "Birth Date": "20-01-1924",
+    "Date f Death": "20-01-2004",
+    "Date Of Mairrage": "",
+    "Education": "MBS",
+    "Ph No 1": 454321,
+    "Ph no 2": 45667,
+    "Ph no 3": "-",
+    "Email Address": "",
+    "Residential Address": ""
+  },
+  {
+    "RelationShip": "AS",
+    "Name": "Harry Potter",
+    "Birth Date": "13-03-1923",
+    "Date f Death": "13-03-2012",
+    "Date Of Mairrage": "",
+    "Education": "PHD",
+    "Ph No 1": 4679,
+    "Ph no 2": 6464,
+    "Ph no 3": "-",
+    "Email Address": "",
+    "Residential Address": ""
+  },
+  {
+    "RelationShip": "ASW",
+    "Name": "Ginny Weasley",
+    "Birth Date": "14-03-1951",
+    "Date f Death": "14-03-2013",
+    "Date Of Mairrage": "",
+    "Education": "BA",
+    "Ph No 1": 56789,
+    "Ph no 2": 67964,
+    "Ph no 3": "-",
+    "Email Address": "",
+    "Residential Address": ""
+  },
+  {
+    "RelationShip": "ASS",
+    "Name": "James Sirius Potter",
+    "Birth Date": "18-05-1952",
+    "Date f Death": "18-05-2029",
+    "Date Of Mairrage": "",
+    "Education": "10th",
+    "Ph No 1": "-",
+    "Ph no 2": "-",
+    "Ph no 3": "-",
+    "Email Address": "",
+    "Residential Address": ""
+  },
+  {
+    "RelationShip": "ASS",
+    "Name": "Albus Severus Potter",
+    "Birth Date": "12-11-1955",
+    "Date f Death": "12-11-2030",
+    "Date Of Mairrage": "",
+    "Education": "12th",
+    "Ph No 1": 65676,
+    "Ph no 2": 4604,
+    "Ph no 3": "-",
+    "Email Address": "",
+    "Residential Address": ""
+  },
+  {
+    "RelationShip": "ASD",
+    "Name": "Lily Luna Potter",
+    "Birth Date": "16-12-1956",
+    "Date f Death": "17-03-2032",
+    "Date Of Mairrage": "-",
+    "Education": "Phd",
+    "Ph No 1": 54328,
+    "Ph no 2": 4804,
+    "Ph no 3": "-",
+    "Email Address": "",
+    "Residential Address": ""
+  }
+]
