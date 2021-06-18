@@ -9,16 +9,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="./main.js"></script>
   </head>
   <body>
     <div class="container" id="container">
-      <form action="#">
+      <form action="#" id="form">
         <h1>Sign In</h1>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input type="text" placeholder="Name" required />
+        <input type="password" id="pass" placeholder="Password" required />
+        <p id="error" class="error">Incorrect Password</p>
         <button>Go</button>
       </form>
     </div>
   </body>
 </html>
-<!--  -->
