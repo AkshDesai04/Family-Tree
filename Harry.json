@@ -1,7 +1,7 @@
 [
   {
     "RelationShip": "A",
-    "Name": "James Potter",
+    "Name": "james potter",
     "Birth Date": "10-12-1901",
     "Date f Death": "10-12-1991",
     "Date Of Mairrage": "",
@@ -14,7 +14,7 @@
   },
   {
     "RelationShip": "AW",
-    "Name": "Lily Potter",
+    "Name": "lily potter",
     "Birth Date": "20-01-1924",
     "Date f Death": "20-01-2004",
     "Date Of Mairrage": "",
@@ -27,7 +27,7 @@
   },
   {
     "RelationShip": "AS",
-    "Name": "Harry Potter",
+    "Name": "harry potter",
     "Birth Date": "13-03-1923",
     "Date f Death": "13-03-2012",
     "Date Of Mairrage": "",
@@ -40,7 +40,7 @@
   },
   {
     "RelationShip": "ASW",
-    "Name": "Ginny Weasley",
+    "Name": "ginny weasley",
     "Birth Date": "14-03-1951",
     "Date f Death": "14-03-2013",
     "Date Of Mairrage": "",
@@ -53,7 +53,7 @@
   },
   {
     "RelationShip": "ASS",
-    "Name": "James Sirius Potter",
+    "Name": "james sirius potter",
     "Birth Date": "18-05-1952",
     "Date f Death": "18-05-2029",
     "Date Of Mairrage": "",
@@ -66,7 +66,7 @@
   },
   {
     "RelationShip": "ASS",
-    "Name": "Albus Severus Potter",
+    "Name": "albus severus potter",
     "Birth Date": "12-11-1955",
     "Date f Death": "12-11-2030",
     "Date Of Mairrage": "",
@@ -79,7 +79,7 @@
   },
   {
     "RelationShip": "ASD",
-    "Name": "Lily Luna Potter",
+    "Name": "lily luna potter",
     "Birth Date": "16-12-1956",
     "Date f Death": "17-03-2032",
     "Date Of Mairrage": "-",
