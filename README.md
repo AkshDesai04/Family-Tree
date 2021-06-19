@@ -11,7 +11,6 @@ Tree page
 
     Each persons card should be created dynamically by reading from a CSV file
     Each card should be clickable
-    On clicking a card, it’s profile page should come up
 
 Profile page
 
