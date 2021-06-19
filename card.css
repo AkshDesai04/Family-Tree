@@ -15,7 +15,7 @@ ul {
   inset: 0;
   display: grid;
   place-items: center;
-  background-color: rgba(0, 0, 0, 0.377);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* THE MAIN CARD */
@@ -25,6 +25,8 @@ ul {
   background-color: #fff;
   border-radius: 1rem;
   width: clamp(30rem, 40rem, 43.75em);
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
 
 .top {
