@@ -1,5 +1,5 @@
 const body = document.querySelector('body')
-const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/Harry-Potter-Family/Harry.json',
+const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/harry.json',
       request = new XMLHttpRequest()
 
 request.open('GET', reqUrl)
@@ -25,10 +25,10 @@ function addPotters(potter) {
         death = document.createElement('p'),
         education = document.createElement('p')
 
-  name.textContent = potter.Name
-  birth.textContent = `Birth - ${potter['Birth Date']}`
-  death.textContent = `Death - ${potter['Date f Death']}`
-  education.textContent = `Education - ${potter.Education}`
+  name.textContent = potter.name
+  birth.textContent = `Birth - ${potter['birth-date']}`
+  death.textContent = `Death - ${potter['date-of-death']}`
+  education.textContent = `Education - ${potter.education}`
 
   name.addEventListener('click', () => {
     createCard(potter)
@@ -60,9 +60,10 @@ function createCard(data) {
   closeIcn.classList.add('fa-times')
   avatar.classList.add('avatar')
   avatar.appendChild(avatarImg)
-  // avatarImg.setAttribute('src', data.Photograph)
+  avatarImg.setAttribute('src', data.photograph)
+  top.appendChild(avatar)
   top.appendChild(name)
-  name.innerText = data.Name
+  name.innerText = data.name
   
   const mid = document.createElement('div')
   const h2 = document.createElement('h2')
@@ -98,15 +99,15 @@ function createCard(data) {
   ul.classList.add('details')
 
   li1.appendChild(i1)
-  li1.append(data['Birth Date'])
+  li1.append(data['birth-date'])
   li2.appendChild(i2)
-  li2.append(data['Date f Death'])
+  li2.append(data['date-of-death'])
   li3.appendChild(i3)
-  li3.append(data.Education)
+  li3.append(data.education)
   li4.appendChild(i4)
-  li4.append(data['Ph No 1'])
+  li4.append(data['ph-no-1'])
   li5.appendChild(i5)
-  li5.append(data['Ph no 2'])
+  li5.append(data['ph-no-2'])
   
   ul.appendChild(li1)
   ul.appendChild(li2)

@@ -10,10 +10,13 @@ ul {
 
 /* THE BLACKISH TRANSLUSENT BACKGROUND */
 .card-container {
+  height: 100vh;
+  width: 100%;
   position: absolute;
   inset: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   transition: transform 100ms ease;
 }
