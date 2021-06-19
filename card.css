@@ -1,0 +1,82 @@
+/* GLOBAL STYLES */
+
+ul {
+  list-style: none;
+}
+
+.top,
+.mid {
+  padding: 25px;
+}
+
+/* THE BLACKISH TRANSLUSENT BACKGROUND */
+.card-container {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+/* THE MAIN CARD */
+.card {
+  /* outline: 2px solid red; */
+  color: #3c4043;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: clamp(30rem, 40rem, 43.75em);
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #dadce0;
+  position: relative;
+}
+
+.top h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.avatar {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+/* CLOSE CARD */
+.fa-times {
+  position: absolute;
+  right: 50px;
+  font-size: 1.375rem;
+  cursor: pointer;
+  transition: color 100ms ease;
+}
+
+.fa-times:hover {
+  color: tomato;
+}
+
+.mid h2 {
+  font-size: 1.355rem;
+  font-weight: 300;
+}
+
+ul.details li {
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+}
+
+ul.details li i {
+  margin-right: 1.5em;
+  color: rgb(0, 89, 255);
+}
