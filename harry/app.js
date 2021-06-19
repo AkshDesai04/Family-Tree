@@ -60,7 +60,8 @@ function createCard(data) {
   closeIcn.classList.add('fa-times')
   avatar.classList.add('avatar')
   avatar.appendChild(avatarImg)
-  // avatarImg.setAttribute('src', data.Photograph)
+  avatarImg.setAttribute('src', 'https://www.biography.com/.image/t_share/MTQ3OTg2NjQ0NDg0NDk4OTEx/hp_cropped_gettyimages-113941726.jpg')
+  top.appendChild(avatar)
   top.appendChild(name)
   name.innerText = data.Name
   
