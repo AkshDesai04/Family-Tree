@@ -4,9 +4,8 @@ ul {
   list-style: none;
 }
 
-.top,
-.mid {
-  padding: 25px;
+.card-container.hidden {
+  transform: scale(0);
 }
 
 /* THE BLACKISH TRANSLUSENT BACKGROUND */
@@ -16,6 +15,7 @@ ul {
   display: grid;
   place-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 100ms ease;
 }
 
 /* THE MAIN CARD */
@@ -81,4 +81,9 @@ ul.details li {
 ul.details li i {
   margin-right: 1.5em;
   color: rgb(0, 89, 255);
+}
+
+.top,
+.mid {
+  padding: 25px;
 }
