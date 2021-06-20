@@ -43,90 +43,49 @@ function addPotters(potter) {
 // Create Card
 function createCard(data) {
   const cardContainer = document.createElement('div')
-  const card = document.createElement('div')
-  const top = document.createElement('div')
-  const closeIcn = document.createElement('i')
-  const avatar = document.createElement('div')
-  const avatarImg = document.createElement('img')
-  const name = document.createElement('h1')
   
   cardContainer.classList.add('card-container')
-  cardContainer.appendChild(card)
-  card.classList.add('card')
-  card.appendChild(top)
-  top.classList.add('top')
-  top.appendChild(closeIcn)
-  closeIcn.classList.add('fas')
-  closeIcn.classList.add('fa-times')
-  avatar.classList.add('avatar')
-  avatar.appendChild(avatarImg)
-  avatarImg.setAttribute('src', data.photograph)
-  top.appendChild(avatar)
-  top.appendChild(name)
-  name.innerText = data.name
   
-  const mid = document.createElement('div')
-  const h2 = document.createElement('h2')
-  const ul = document.createElement('ul')
-  const li1 = document.createElement('li')
-  const li2 = document.createElement('li')
-  const li3 = document.createElement('li')
-  const li4 = document.createElement('li')
-  const li5 = document.createElement('li')
+  cardContainer.innerHTML = `
+  <div class="card">
+  <div class="top">
+  <i class="fas fa-times"></i>
+  <div class="avatar">
+  <img src="${data.photograph}" alt="harry" />
+  </div>
+  <h1>${data.name}</h1>
+  </div>
+  <div class="mid">
+  <h2>Details</h2>
+  <ul class="details">
+  <li>
+  <i class="fad fa-birthday-cake"></i>
+  ${data['birth-date']}
+  </li>
+  <li>
+  <i class="fas fa-tombstone"></i>
+  ${data['date-of-death']}
+  </li>
+  <li>
+  <i class="far fa-book-open"></i>
+  ${data.education}
+  </li>
+  <li><i class="fal fa-phone-alt"></i>${data['ph-no-1']}</li>
+  <li><i class="fal fa-phone-alt"></i>${data['ph-no-2']}</li>
+  </ul>
+  </div>
+  </div>`
   
-  const i1 = document.createElement('i')
-  const i2 = document.createElement('i')
-  const i3 = document.createElement('i')
-  const i4 = document.createElement('i')
-  const i5 = document.createElement('i')
-
-  i1.classList.add('fad')
-  i1.classList.add('fa-birthday-cake')
-  i2.classList.add('fas')
-  i2.classList.add('fa-tombstone')
-  i3.classList.add('far')
-  i3.classList.add('fa-book-open')
-  i4.classList.add('fal')
-  i4.classList.add('fa-phone-alt')
-  i5.classList.add('fal')
-  i5.classList.add('fa-phone-alt')
-
-
-  mid.classList.add('mid')
-  mid.appendChild(h2)
-  h2.innerText = 'Details'
-  mid.appendChild(ul)
-  ul.classList.add('details')
-
-  li1.appendChild(i1)
-  li1.append(data['birth-date'])
-  li2.appendChild(i2)
-  li2.append(data['date-of-death'])
-  li3.appendChild(i3)
-  li3.append(data.education)
-  li4.appendChild(i4)
-  li4.append(data['ph-no-1'])
-  li5.appendChild(i5)
-  li5.append(data['ph-no-2'])
-  
-  ul.appendChild(li1)
-  ul.appendChild(li2)
-  ul.appendChild(li3)
-  ul.appendChild(li4)
-  ul.appendChild(li5)
-
-  card.appendChild(mid)
-
   body.appendChild(cardContainer)
-
+  
   // ADD ABILITY TO CLOSE CARD
-  closeIcn.addEventListener('click', closeCard)
+  cardContainer.firstElementChild.firstElementChild.firstElementChild.addEventListener('click', closeCard)
 }
 
 
 function closeCard(e) {
   e.target.parentElement.parentElement.parentElement.classList.add('hidden')
-
+  
   e.target.parentElement.parentElement.parentElement.addEventListener('transitionend', (event) => {
     if(event.target.classList.contains('card-container')) {
       event.target.remove()
