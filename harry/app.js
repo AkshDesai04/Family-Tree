@@ -49,7 +49,7 @@ function createCard(data) {
   cardContainer.innerHTML = `
   <div class="card">
   <div class="top">
-  <i class="fas fa-times"></i>
+  <i class="fas fa-times" id="closeCardBtn"></i>
   <div class="avatar">
   <img src="${data.photograph}" alt="harry" />
   </div>
@@ -78,15 +78,23 @@ function createCard(data) {
   
   body.appendChild(cardContainer)
   
+  // cardContainer.addEventListener('click', e => {
+  //   if(e.target.classList.contains('card-container')) {
+  //     e.target.remove()
+  //   }
+  // })
+
   // ADD ABILITY TO CLOSE CARD
-  cardContainer.firstElementChild.firstElementChild.firstElementChild.addEventListener('click', closeCard)
+  cardContainer.querySelector('#closeCardBtn').addEventListener('click', closeCard)
 }
 
 
 function closeCard(e) {
-  e.target.parentElement.parentElement.parentElement.classList.add('hidden')
+  const container = e.target.closest('.card-container')
   
-  e.target.parentElement.parentElement.parentElement.addEventListener('transitionend', (event) => {
+  container.classList.add('hidden')
+  
+  container.addEventListener('transitionend', (event) => {
     if(event.target.classList.contains('card-container')) {
       event.target.remove()
     }
