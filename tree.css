@@ -9,6 +9,8 @@ body {
   width: 100%;
   position: relative;
   font-family: 'Noto Sans', sans-serif;
+  display: grid;
+  place-items: center;
 }
 
 h1 {
