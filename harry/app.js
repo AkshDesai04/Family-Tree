@@ -1,4 +1,5 @@
-const body = document.querySelector('body')
+const body = document.querySelector('body'),
+      root = document.documentElement
 const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/harry.json',
       request = new XMLHttpRequest()
 
@@ -30,7 +31,11 @@ function addPotters(potter) {
   death.textContent = `Death - ${potter['date-of-death']}`
   education.textContent = `Education - ${potter.education}`
 
-  name.addEventListener('click', () => {
+  name.addEventListener('click', e => {
+    console.log(e.target.offsetTop/2);
+    console.log(e.target.offsetLeft/2);
+    root.style.setProperty('--mouse-x', e.clientX + "px");
+    root.style.setProperty('--mouse-y', e.clientY + "px");
     createCard(potter)
   })
 

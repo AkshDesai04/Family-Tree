@@ -5,6 +5,7 @@ ul {
 }
 
 .card-container.hidden {
+  background: transparent;
   transform: scale(0);
 }
 
@@ -18,7 +19,8 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: transform 100ms ease;
+  transition: transform 300ms cubic-bezier(0.68, -0.55, 0.52, 1.38);
+  transform-origin: var(--mouse-x) var(--mouse-y);
 }
 
 /* THE MAIN CARD */
