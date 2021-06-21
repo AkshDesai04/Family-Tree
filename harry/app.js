@@ -1,6 +1,6 @@
 const body = document.querySelector('body'),
       root = document.documentElement
-const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/Tree-JSON-edit/harry/harry.json',
+const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/harry.json',
       request = new XMLHttpRequest()
 
 request.open('GET', reqUrl)
