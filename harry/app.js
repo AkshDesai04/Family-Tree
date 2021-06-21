@@ -128,7 +128,7 @@ function createPersonNode(data) {
     console.log(per);
     nodes.push(per)
   });
-  console.log(nodes);
+  // console.log(nodes);
 
   return nodes
 }
