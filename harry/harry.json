@@ -1,7 +1,6 @@
 [
   {
     "id": "1",
-    "parent": "",
     "father-is": "",
     "mother-is": "",
     "married-to": "",
@@ -21,7 +20,6 @@
   },
   {
     "id": "2",
-    "parent": "",
     "father-is": "",
     "mother-is": "",
     "married-to": "1",
@@ -41,7 +39,6 @@
   },
   {
     "id": "3",
-    "parent": "1",
     "father-is": "1",
     "mother-is": "2",
     "married-to": "",
@@ -61,7 +58,6 @@
   },
   {
     "id": "4",
-    "parent": "",
     "father-is": "",
     "mother-is": "",
     "married-to": "3",
@@ -81,7 +77,6 @@
   },
   {
     "id": "5",
-    "parent": "3",
     "father-is": "3",
     "mother-is": "4",
     "married-to": "",
@@ -101,7 +96,6 @@
   },
   {
     "id": "6",
-    "parent": "3",
     "father-is": "3",
     "mother-is": "4",
     "married-to": "",
@@ -121,7 +115,6 @@
   },
   {
     "id": "7",
-    "parent": "3",
     "father-is": "3",
     "mother-is": "4",
     "married-to": "",
@@ -141,7 +134,6 @@
   },
   {
     "id": "8",
-    "parent": "",
     "father-is": "",
     "mother-is": "",
     "married-to": "7",
@@ -161,7 +153,6 @@
   },
   {
     "id": "9",
-    "parent": "",
     "father-is": "",
     "mother-is": "",
     "married-to": "6",
