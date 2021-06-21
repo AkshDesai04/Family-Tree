@@ -112,6 +112,7 @@ function closeCard(e) {
 
 function createTree(nodes) {
   const chart = new OrgChart(document.getElementById("orgchart"), {
+    template: "diva",
     nodeBinding: {
         field_0: "name",
         img_0: "img"
@@ -125,10 +126,8 @@ function createPersonNode(data) {
 
   data.forEach(person => {
     const per = new Person(person)
-    console.log(per);
     nodes.push(per)
   });
-  // console.log(nodes);
 
   return nodes
 }
@@ -144,4 +143,7 @@ function Person(data) {
   } 
   this.name = data.name
   this.img = data.photograph
+  this.birthDate = data['birth-date']
+  this.dateOfDeath = data['date-of-death']
+  this.Education = data.education
 }
