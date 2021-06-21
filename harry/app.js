@@ -117,15 +117,6 @@ function createTree(nodes) {
         img_0: "img"
     },
     nodes: nodes,
-    // nodes: [
-    //     { id: 1, name: "James Potter", img:'https://bit.ly/3zFZQUo'},
-    //     { id: 2, pid: 1, name: "Lily Potter", tags: ['left-partner'], img:'https://bit.ly/3zFZQUo'},
-    //     { id: 3, pid: 1, name:"Harry Potter", img:'https://bit.ly/3zFZQUo'},
-    //     { id: 4, pid: 3, name:"Geany Potter",tags: ['left-partner'], img:'https://bit.ly/3zFZQUo'},
-    //     { id: 5, pid: 3, name:"Albus Potter", img:'https://bit.ly/3zFZQUo'},
-    //     { id: 6, pid: 3, name:"Severus Potter", img:'https://bit.ly/3zFZQUo'},
-    //     { id: 7, pid: 3, name:"Lily harry Potter", img:'https://bit.ly/3zFZQUo'},
-    // ]
   });
 }
 
@@ -134,9 +125,10 @@ function createPersonNode(data) {
 
   data.forEach(person => {
     const per = new Person(person)
-    // console.log(per);
+    console.log(per);
     nodes.push(per)
   });
+  // console.log(nodes);
 
   return nodes
 }
@@ -146,9 +138,9 @@ function Person(data) {
 
   if(data.parent) {
     this.pid = data.parent
-  } else if (data['Married-to']) {
-    this.pid = data['Married-to']
-    this.tags = ['left-partner'];
+  } else if (data['married-to']) {
+    this.pid = data['married-to']
+    data.male ? this.tags = ['left-partner'] : this.tags = ['right-partner']
   } 
   this.name = data.name
   this.img = data.photograph
