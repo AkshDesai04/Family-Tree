@@ -1,6 +1,6 @@
 const body = document.querySelector('body'),
       root = document.documentElement
-const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/Tree-JSON-edit/harry/harry.json',
+const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/harry.json',
       request = new XMLHttpRequest()
 
 request.open('GET', reqUrl)
@@ -112,6 +112,7 @@ function closeCard(e) {
 
 function createTree(nodes) {
   const chart = new OrgChart(document.getElementById("orgchart"), {
+    template: "diva",
     nodeBinding: {
         field_0: "name",
         img_0: "img"
@@ -125,23 +126,26 @@ function createPersonNode(data) {
 
   data.forEach(person => {
     const per = new Person(person)
-    console.log(per);
     nodes.push(per)
   });
-  // console.log(nodes);
-
+  console.log(nodes);
   return nodes
 }
 
 function Person(data) {
   this.id = data.id
 
-  if(data.parent) {
-    this.pid = data.parent
-  } else if (data['married-to']) {
+  if(data['married-to']) {
     this.pid = data['married-to']
     data.male ? this.tags = ['left-partner'] : this.tags = ['right-partner']
-  } 
+  } else if (data['father-is']) {
+    this.pid = data['father-is']
+    this.ppid = data['mother-is']
+  }
+
   this.name = data.name
   this.img = data.photograph
+  this.birthDate = data['birth-date']
+  this.dateOfDeath = data['date-of-death']
+  this.Education = data.education
 }
