@@ -16,7 +16,7 @@
     "ph-no-3": "-",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/james_potter.jpg"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/james_potter.jpg"
   },
   {
     "id": "2",
@@ -35,7 +35,7 @@
     "ph-no-3": "-",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/lily_potter.jpg"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/lily_potter.jpg"
   },
   {
     "id": "3",
@@ -54,7 +54,7 @@
     "ph-no-3": "-",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/harry_potter.png"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/harry_potter.png"
   },
   {
     "id": "4",
@@ -73,7 +73,7 @@
     "ph-no-3": "-",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/ginny_weasley.jpg"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/ginny_weasley.jpg"
   },
   {
     "id": "5",
@@ -92,7 +92,7 @@
     "ph-no-3": "-",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/james_severus_potter.jpg"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/james_sirius_potter.jpg"
   },
   {
     "id": "6",
@@ -111,7 +111,7 @@
     "ph-no-3": "-",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/albus_sirius_potter.jpg"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/albus_severus_potter.jpg"
   },
   {
     "id": "7",
@@ -130,7 +130,7 @@
     "ph-no-3": "-",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/lily_luna_potter.jpg"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/lily_luna_potter.jpg"
   },
   {
     "id": "8",
@@ -149,7 +149,7 @@
     "ph-no-3": "",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/ghost.png"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/ghost.png"
   },
   {
     "id": "9",
@@ -168,6 +168,6 @@
     "ph-no-3": "",
     "email-address": "",
     "residential-address": "",
-    "photograph": "https://github.com/Dev-AkshDesai/Family-Tree/tree/main/harry/Pics/ghost_2.jpg"
+    "photograph": "https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/Pics/ghost_2.jpg"
   }
 ]
