@@ -128,19 +128,21 @@ function createPersonNode(data) {
     const per = new Person(person)
     nodes.push(per)
   });
-
+  console.log(nodes);
   return nodes
 }
 
 function Person(data) {
   this.id = data.id
 
-  if(data.parent) {
-    this.pid = data.parent
-  } else if (data['married-to']) {
+  if(data['married-to']) {
     this.pid = data['married-to']
     data.male ? this.tags = ['left-partner'] : this.tags = ['right-partner']
-  } 
+  } else if (data['father-is']) {
+    this.pid = data['father-is']
+    this.ppid = data['mother-is']
+  }
+
   this.name = data.name
   this.img = data.photograph
   this.birthDate = data['birth-date']
