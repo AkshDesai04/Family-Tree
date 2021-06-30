@@ -23,3 +23,7 @@ h1 {
 [node-id='3'] circle {
   fill: goldenrod;
 }
+
+[data-field-name='ppid'] {
+  display: none;
+}
