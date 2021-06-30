@@ -128,7 +128,7 @@ function createPersonNode(data) {
     const per = new Person(person)
     nodes.push(per)
   });
-  console.log(nodes);
+  // console.log(nodes);
   return nodes
 }
 
@@ -150,7 +150,7 @@ function Person(data) {
   this.Education = data.education
   this.dateOfMairrage = data['date-of-mairrage']
   this.Phone1 = data['ph-no-1']
-  this.Phone2 = data['ph-no-p']
-  this.Emal = data['email-address']
+  this.Phone2 = data['ph-no-2']
+  this.Email = data['email-address']
   this.Address = data['residential-address']
 }
