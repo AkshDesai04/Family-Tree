@@ -31,3 +31,7 @@ h1 {
 .edit-tags {
   display: none;
 }
+
+[node-id] rect {
+  rx: 10px;
+}
