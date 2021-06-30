@@ -148,4 +148,9 @@ function Person(data) {
   this.birthDate = data['birth-date']
   this.dateOfDeath = data['date-of-death']
   this.Education = data.education
+  this.dateOfMairrage = data['date-of-mairrage']
+  this.Phone1 = data['ph-no-1']
+  this.Phone2 = data['ph-no-p']
+  this.Emal = data['email-address']
+  this.Address = data['residential-address']
 }
