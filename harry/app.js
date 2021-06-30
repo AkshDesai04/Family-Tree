@@ -1,5 +1,6 @@
 const body = document.querySelector('body'),
-      root = document.documentElement
+      root = document.documentElement,
+      loader = document.querySelector('.loader-container')
 const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/harry.json',
       request = new XMLHttpRequest()
 
@@ -13,6 +14,11 @@ request.onload = () => {
   // createPotters(potters)
   createTree(createPersonNode(potters))
 }
+
+// Hide LOADER
+window.addEventListener('load', () => {
+  loader.remove()
+})
 
 // function createPotters(obj) {
 //   addPotters()
@@ -128,7 +134,7 @@ function createPersonNode(data) {
     const per = new Person(person)
     nodes.push(per)
   });
-  console.log(nodes);
+  // console.log(nodes);
   return nodes
 }
 
@@ -148,4 +154,9 @@ function Person(data) {
   this.birthDate = data['birth-date']
   this.dateOfDeath = data['date-of-death']
   this.Education = data.education
+  this.dateOfMairrage = data['date-of-mairrage']
+  this.Phone1 = data['ph-no-1']
+  this.Phone2 = data['ph-no-2']
+  this.Email = data['email-address']
+  this.Address = data['residential-address']
 }
