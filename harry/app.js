@@ -1,5 +1,6 @@
 const body = document.querySelector('body'),
-      root = document.documentElement
+      root = document.documentElement,
+      loader = document.querySelector('.loader-container')
 const reqUrl = 'https://raw.githubusercontent.com/Dev-AkshDesai/Family-Tree/main/harry/harry.json',
       request = new XMLHttpRequest()
 
@@ -13,6 +14,11 @@ request.onload = () => {
   // createPotters(potters)
   createTree(createPersonNode(potters))
 }
+
+// Hide LOADER
+window.addEventListener('load', () => {
+  loader.remove()
+})
 
 // function createPotters(obj) {
 //   addPotters()

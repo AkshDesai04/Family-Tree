@@ -4,14 +4,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #212121;
+  --primary-color: hsl(196, 78%, 61%);
+  --clock-color: var(--primary-color);
+  --clock-width: 4rem;
+  --clock-radius: calc(var(--clock-width) / 2);
+  --clock-minute-length: calc(var(--clock-width) * 0.4);
+  --clock-hour-length: calc(var(--clock-width) * 0.2);
+  --clock-thickness: 0.2rem;
+}
+
 body {
   height: 100vh;
   width: 100%;
   position: relative;
   font-family: 'Noto Sans', sans-serif;
-  display: grid;
-  place-items: center;
-  background: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
 }
 
 h1 {
@@ -35,4 +47,56 @@ h1 {
 
 [node-id] rect {
   rx: 10px;
+}
+
+/* the 🔃loader */
+.loader-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: var(--bg-color);
+}
+
+.clock-loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--clock-width);
+  height: var(--clock-width);
+  border: 3px solid var(--clock-color);
+  border-radius: 50%;
+  z-index: 9999999;
+}
+
+.clock-loader::before,
+.clock-loader::after {
+  position: absolute;
+  content: '';
+  top: calc(var(--clock-radius) * 0.25);
+  width: var(--clock-thickness);
+  background: var(--clock-color);
+  border-radius: 10px;
+  transform-origin: center calc(100% - calc(var(--clock-thickness) / 2));
+  animation: spin infinite linear;
+}
+
+.clock-loader::before {
+  height: var(--clock-minute-length);
+  animation-duration: 2s;
+}
+
+.clock-loader::after {
+  top: calc(var(--clock-radius) * 0.25 + var(--clock-hour-length));
+  height: var(--clock-hour-length);
+  animation-duration: 15s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
 }
