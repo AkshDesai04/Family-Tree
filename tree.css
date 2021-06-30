@@ -16,3 +16,10 @@ body {
 h1 {
   cursor: pointer;
 }
+
+/* THE 🌳 */
+
+[node-id='3'] rect,
+[node-id='3'] circle {
+  fill: gold;
+}
