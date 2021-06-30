@@ -27,3 +27,7 @@ h1 {
 [data-field-name='ppid'] {
   display: none;
 }
+
+.edit-tags {
+  display: none;
+}
