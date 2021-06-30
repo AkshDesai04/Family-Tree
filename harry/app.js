@@ -123,6 +123,7 @@ function createTree(nodes) {
         field_0: "name",
         img_0: "img"
     },
+    searchFields: ['Address','Education', 'Email', 'Phone1', 'Phone2', 'birthDate', 'dateOfDeath', 'dateOfMairrage', 'name'],
     nodes: nodes,
   });
 }
@@ -134,7 +135,7 @@ function createPersonNode(data) {
     const per = new Person(person)
     nodes.push(per)
   });
-  // console.log(nodes);
+  console.log(nodes);
   return nodes
 }
 
