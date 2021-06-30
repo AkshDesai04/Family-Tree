@@ -11,6 +11,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   display: grid;
   place-items: center;
+  background: #212121;
 }
 
 h1 {
