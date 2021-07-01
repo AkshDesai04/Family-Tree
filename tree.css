@@ -58,6 +58,7 @@ h1 {
   height: 100vh;
   width: 100%;
   background: var(--bg-color);
+  z-index: 9999999;
 }
 
 .clock-loader {
@@ -69,7 +70,6 @@ h1 {
   height: var(--clock-width);
   border: 3px solid var(--clock-color);
   border-radius: 50%;
-  z-index: 9999999;
 }
 
 .clock-loader::before,

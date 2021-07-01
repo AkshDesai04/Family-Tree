@@ -118,7 +118,7 @@ window.addEventListener('load', () => {
 
 function createTree(nodes) {
   const chart = new OrgChart(document.getElementById("orgchart"), {
-    template: "diva",
+    template: "olivia",
     nodeBinding: {
         field_0: "name",
         img_0: "img"
